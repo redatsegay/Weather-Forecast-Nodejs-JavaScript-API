@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit', (e) => {
     const city = inputCity;
     const state = inputState;
 
-    fetch(`http://localhost:3000/weather?location=${encodeURIComponent(city + ',' + state)}`)
+    fetch(`/weather?location=${encodeURIComponent(city + ',' + state)}`)
     .then((response) => {
         response.json().then((data) => {
             if (data.error) {

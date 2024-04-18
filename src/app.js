@@ -4,6 +4,7 @@ const hbs = require('hbs')
 const geoforecastAPI = require('./Utils/utility')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 const publicPathDir = path.join(__dirname, '../public')
 const viewTemplate = path.join(__dirname, '../templates/views')
@@ -71,6 +72,6 @@ app.get('*',(req, res)=>{
     })
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('Server is up and running!!')
 })

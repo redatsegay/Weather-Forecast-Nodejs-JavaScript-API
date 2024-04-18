@@ -1,0 +1,17 @@
+body{
+    color: black
+    text-font: Bold
+}
+p{
+    color:rgb(255, 0, 0)
+}
+footer{
+    background: red;
+}
+
+footer a{
+    color: blue;
+}
+h1{
+    color:red
+}
